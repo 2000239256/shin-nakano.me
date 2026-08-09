@@ -1,1 +1,370 @@
+/* =====================================
+   BASE
+===================================== */
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #111111;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.65;
+}
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.header-container {
+    max-width: 640px;
+    height: 56px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111111;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#menu-button {
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    color: #222222;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+/* =====================================
+   MAIN LAYOUT
+===================================== */
+
+main {
+    max-width: 640px;
+    margin: 0 auto;
+
+    padding-top: 95px;
+    padding-bottom: 100px;
+}
+
+
+
+/* =====================================
+   HERO
+===================================== */
+
+#hero {
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.profile-image {
+    width: 128px;
+    height: 128px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    flex-shrink: 0;
+}
+
+.hero-text h1 {
+    margin: 0 0 4px 0;
+
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+}
+
+.subtitle {
+    margin: 2px 0;
+
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+
+
+/* =====================================
+   SOCIAL LINKS
+===================================== */
+
+#social {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 18px;
+
+    font-size: 14px;
+}
+
+#social a {
+    color: #777777;
+    transition: opacity 0.2s ease;
+}
+
+#social a:hover {
+    color: #111111;
+}
+
+
+
+/* =====================================
+   DIVIDER
+===================================== */
+
+hr {
+    border: none;
+    border-top: 1px solid #dddddd;
+
+    margin-top: 68px;
+    margin-bottom: 68px;
+}
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+section {
+    margin-bottom: 72px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 0 0 22px 0;
+
+    color: #111111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+h3 {
+    margin: 0 0 8px 0;
+
+    color: #111111;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section p {
+    margin: 0 0 18px 0;
+
+    color: #666666;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+section p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* =====================================
+   CURRENT WORK
+===================================== */
+
+#current-work article {
+    margin-bottom: 32px;
+}
+
+#current-work article:last-child {
+    margin-bottom: 0;
+}
+
+#current-work article p {
+    margin-top: 6px;
+}
+
+
+
+/* =====================================
+   TIMELINE
+===================================== */
+
+#timeline ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+#timeline li {
+    padding: 10px 0;
+
+    color: #666666;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+#timeline li:first-child {
+    padding-top: 0;
+}
+
+
+
+/* =====================================
+   CONTACT
+===================================== */
+
+#contact p {
+    margin-bottom: 8px;
+}
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    max-width: 640px;
+
+    margin: 0 auto;
+    padding: 30px 0 50px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+footer p {
+    margin: 0;
+
+    color: #999999;
+
+    font-size: 13px;
+}
+
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 720px) {
+
+    .header-container,
+    main,
+    footer {
+        width: auto;
+
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    main {
+        padding-top: 64px;
+    }
+
+}
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 520px) {
+
+    #hero {
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .profile-image {
+        width: 92px;
+        height: 92px;
+    }
+
+    .hero-text h1 {
+        font-size: 27px;
+        letter-spacing: -0.8px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    #social {
+        margin-top: 20px;
+
+        gap: 10px 14px;
+    }
+
+    hr {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    section {
+        margin-bottom: 56px;
+    }
+
+    section p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+}
